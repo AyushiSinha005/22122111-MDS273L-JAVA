@@ -5,7 +5,7 @@ public class LAB2 {
         Scanner sc=new Scanner(System.in); 
         String name2;
         String name3;
-        //String name[]= {"ayu","Sinha","Riya","Shan"}
+        
         String name[]= new String[1024];
         int c=0; int a=0;
         do{
@@ -40,7 +40,7 @@ public class LAB2 {
              System.out.println("names");
 
              for(int i=0;i<c;i++){
-                //System.out.println("names");
+                
                 System.out.println(name[i]);
 
              }
