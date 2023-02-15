@@ -14,14 +14,37 @@ public class LAB2 {
            
             switch(inp){
                 case 1: System.out.println("Enter the name");
-                name[c]=sc.nextLine();
-                c=c+1;
+                String tempname =sc.nextLine();
+                boolean addName=false;
+                if(c==0){
+                    addName=true;
+                }
+                else{
+                    for(int i=0;i<c;i++){
+                        if(name[i].equalsIgnoreCase(tempname)){
+                            addName=false;
+                        }
+                        else{
+                            addName=true;
+                        }
+                    }
+                }
+                if(addName==true){
+                    name[c]=tempname;
+                    c=c+1;
+                    System.out.println("Name entered");
+                }else{
+                    System.out.println("Name alreadt exists");
+                }
+                
+                    
                 break;
                 case 2:System.out.println("Enter name for search");
                 name2=sc.nextLine();
 
 
-                for(int i=0;i<=c;i++){ if(name[i].equals(name2)) {
+                for(int i=0;i<=c;i++){ 
+                    if(name[i].equals(name2)) {
                     System.out.println(" name already exists at "+i);
                     break;
 
