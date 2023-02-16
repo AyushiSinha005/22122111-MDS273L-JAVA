@@ -10,8 +10,9 @@ public class Lab03 {
          //System.out.println("The mean of the array is "+mean);
          return mean;
       }
-      static int medianf(int[] a){
-        int m=0;int n=0;int s=0;int val=0;
+      static float medianf(int[] a){
+        int m=0;int n=0;int s=0;float val=0;
+        Arrays.sort(a);
         if(a.length%2==0){
             s=(a.length/2)+1;
             n=(a.length/2);
