@@ -76,6 +76,8 @@ do{
         System.out.println("************************");
         System.out.println("total amount available= "+ balance);
         System.out.println("************************");
+        break;
+        default: System.out.println("invalid");
 
 
 
