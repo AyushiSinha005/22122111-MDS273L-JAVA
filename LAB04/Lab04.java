@@ -66,8 +66,9 @@ do{
         System.out.println("amount before = "+balance);
         System.out.println("amount credited");
         transaction(a);
+        if(b<=balance){
         System.out.println("amount debited");
-        transaction(b);
+        transaction(b);}
         System.out.println("total current amount = "+balance);
 
         System.out.println("************************");
