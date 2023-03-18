@@ -81,7 +81,7 @@ public class LAB05{
                     default:
                     System.out.println("Invalid choice. Please try again.");
                     break;
-                }}
+                }}  
             }
         }
     
